@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #efefef;
+}
+
+li{
+    font-family: Georgia;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.header-container{
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+    /*box-shadow: 1px 0px 10px 0px black ;*/
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-info-container{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+
+}
+
+.header-name{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: Georgia;
+    align-items: center;
+}
+
+.bio{
+    flex: 1;
+    font-size: 1.2rem;
+    font-family: Georgia;
+    padding: 10rem;
+
+}
+
+
+.avatar{
+    height: 300px;
+}
+
+.main-title{
+    font-size: 3rem;
+    font-family: Georgia;
+}
+
+.sub-title{
+    font-size: 1.5rem;
+    font-family: Georgia;
+
+}
+
+
+.section-title-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    font-family: Georgia;
+}
+
+.main-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.project-grid{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+
+}
+
+.project-box{
+    height: 20rem;
+    width: 100%;
+    background-color: cornflowerblue;
+
+}
+
+.more-details-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -2rem;
+
+}
+
+.button-text1{
+    font-size: 1.2rem;
+    font-family: Georgia;
+    padding-bottom: 1rem;
+
+}
+
+.button-icon1{
+    height: 3rem;
+}
+
+.icon-container1{
+    background-color: white;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.3rem;
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.664) ;
+    transition: transform 0.2s ease-out 0.2ms
+}
+
+.icon-container1:hover{
+    transform: scale(1.2);
+}
