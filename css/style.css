@@ -1,16 +1,47 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+  }
+
 body{
     margin: 0;
     padding: 0;
-
+    font-family: OpenSans;
     background-color: #efefef;
 }
 
 li{
-    font-family: Georgia;
+    /*font-family: Georgia;*/
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
 
+.tags-container{
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 2rem;
+}
+
+.tag{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 50px;
+    border-color: #a6c1ee;
+    border-width: 3px;
+    border-style: solid;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.tag span{
+    font-size: 1.2rem;
+    
+}
 
 
 .header-container{
@@ -19,31 +50,29 @@ li{
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
 }
 
 .header-info-container{
-    padding-top: 5rem;
-    padding-bottom: 1rem;
     padding-left: 3rem;
     display: flex;
     flex-direction: row;
     align-items:center;
-
 }
 
 .header-name{
     display: flex;
     flex-direction: column;
     flex: 1;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
     align-items: center;
 }
 
 .bio{
     flex: 1;
     font-size: 1.2rem;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
     padding: 10rem;
 
 }
@@ -55,12 +84,12 @@ li{
 
 .main-title{
     font-size: 3rem;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
 }
 
 .sub-title{
     font-size: 1.5rem;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
 
 }
 
@@ -72,7 +101,7 @@ li{
 
 .section-title{
     font-size: 1.5rem;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
 }
 
 .main-content{
@@ -80,8 +109,8 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .project-grid{
@@ -111,7 +140,7 @@ li{
 
 .button-text1{
     font-size: 1.2rem;
-    font-family: Georgia;
+    /*font-family: Georgia;*/
     padding-bottom: 1rem;
 
 }
