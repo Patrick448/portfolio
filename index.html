@@ -16,32 +16,36 @@
 <div class="container">
   
     <div class="header-container">
+
+        <div class="header-menu">
+            <a href="#skills"><div class="menu-item"><p class="hover-underline-animation">Skills</p></div></a>
+            <a href="#what-i-can-do"><div class="menu-item"><p class="hover-underline-animation">What I Can Do</p></div></a>
+            <a href="#projects"><div class="menu-item"><p class="hover-underline-animation">Projects</p></div></a>
+            <a href="#contact"><div class="menu-item"><p class="hover-underline-animation">Contact</p></div></a>
+        </div>
+
         <div class="header-info-container">
             <div class="header-name">
-                <div class="avatar-container">
-                    <img class="avatar" src="pic2.png"/>
-        
-                </div>
                 <span class="main-title">Patrick Carvalho</span>
-                <span class="sub-title">CS Student | Developer</span> 
+                <span class="sub-title">|Software Developer</span>
             </div>
-    
-            <div class="bio">Hello! I'm a programmer passionate about solving problems with creativity. 
-                I have experience with fullstack web development as well as some scripting and optimization.
-                Welcome to my portfolio, I hope you like it! </div>
         </div>
-    
-        <div  class="more-details-button">
-            <span class="button-text1">More details</span>
-            <div class="icon-container1">
-                <img class="button-icon1" src="arrow-small-down.svg"/>
-            </div>
+
+        <div class="header-info-container-level0">
+                <img class="avatar" src="pic3.svg"/>
         </div>
     </div>
 
 
-
     <div class="main-content">
+        <div class="bio-container">
+            <img class="bio-circle-icon" src="ellipse4.svg"/>
+            <div class="bio">Hello! I'm a programmer passionate about solving problems with creativity.
+                I have experience with fullstack web development as well as some scripting and optimization.
+                Welcome to my portfolio, I hope you like it! </div>
+        </div>
+
+
         <section id="skills">
             <div class="section-title-container">
                 <span class="section-title">Main skills</span>
@@ -94,6 +98,7 @@
                     <li>Something else</li>
                     <li>Something else</li>
                     <li>Something else</li>
+                </ul>
             </div>
 
         </section>
@@ -103,17 +108,48 @@
                 <span class="section-title">Highlighted projects</span>
             </div>
             <div class="project-grid">
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
-                <div class="project-box"></div>
+                <div class="project-box">
+                    <img class="project-image" src="sample_img.png"/>
+                    <div class="project-text">
+                        <p class="project-title">Project 1</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor cursus sem, sed finibus quam mattis nec. Aliquam mattis sapien in est luctus mollis. Praesent suscipit convallis finibus. Duis luctus dolor id hendrerit rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+                    </div>
+
+                </div>
+                <div class="project-box">
+                    <img class="project-image" src="sample_img.png"/>
+                    <div class="project-text">
+                        <p class="project-title">Project 1</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor cursus sem, sed finibus quam mattis nec. Aliquam mattis sapien in est luctus mollis. Praesent suscipit convallis finibus. Duis luctus dolor id hendrerit rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
-    </div>
 
+        <section id="contact">
+            <div class="section-title-container">
+                <span class="section-title">Contact</span>
+            </div>
+            <div class="contact-info-item">
+                <p>Email:</p>
+                <p><a href="mailto:patrickcarvalho448@gmail.com">patrickcarvalho448@gmail.com</a></p>
+            </div>
+            <div class="contact-info-item">
+                <p>Linkedin:</p>
+                <p><a href="https://www.linkedin.com/in/patrick-carvalho/">linkedin.com/in/patrick-carvalho</a></p>
+            </div>
+
+            <div class="contact-info-item">
+                <p>Github:</p>
+                <p><a href="https://github.com/Patrick448">github.com/Patrick448</a></p>
+            </div>
+
+        </section>
+
+    </div>
 
     <div class="footer-container">
     </div>
@@ -121,6 +157,16 @@
 </div>
 
 <script>
+    $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".header-menu").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header-menu").removeClass("active");
+            }
+        });
+    });
 </script>
 
 </body>
