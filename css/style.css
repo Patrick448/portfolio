@@ -20,7 +20,6 @@ li{
 .tags-container{
     display: flex;
     flex-flow: wrap;
-    padding-top: 2rem;
 }
 
 .tag{
@@ -42,7 +41,6 @@ li{
     font-size: 1.2rem;
     
 }
-
 
 .container{
     display: flex;
@@ -276,6 +274,36 @@ li{
     transform-origin: bottom left;
 }
 
+.can-do-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+
+.can-do-item{
+    padding: 1rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: #9E7BFF;
+}
+
+.separator{
+    height: 0.2rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #FCC482 0%, #9E7BFF 100%);
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.can-do-item p{
+    color: #9E7BFF;
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
     .header-container{
         min-height: 80vh;
@@ -312,3 +340,4 @@ li{
     }
 
 }
+
